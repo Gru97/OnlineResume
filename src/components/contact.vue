@@ -1,6 +1,6 @@
 <template>
     <div>
-
+        Reach out via Email: Fatemeh.Shahidani@gmail.com
     </div>
 </template>
 

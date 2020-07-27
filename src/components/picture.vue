@@ -1,6 +1,6 @@
 <template>
     <div>
-        <img src="../assets/me.jpg"/>
+        <img src="../assets/me.png"/>
     </div>
 </template>
 
@@ -12,7 +12,10 @@
 
 <style scoped>
 img {
-    height: 50%;
-    width: 100%;
+    border-radius: 50%;
+    width:80%;
+    height: 90%;
+    border:darkblue 80px;
 }
+
 </style>
