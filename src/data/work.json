@@ -1,0 +1,14 @@
+[
+    {"id":1,"name":"Git","level":"Good"},
+    {"id":2,"name":"JavaScript, JQuery","level":"Good"},
+    {"id":3,"name":"Vue Js","level":"Good"},
+    {"id":4,"name":"HTML, CSS, Bootstrap","level":"Good"},
+    {"id":5,"name":"Angular, TypeScript","level":"Good"},
+    {"id":6,"name":"Microsoft SQL Server","level":"Good"},
+    {"id":7,"name":"CQRS","level":"Good"},
+    {"id":8,"name":"Domain Driven Design","level":"Good"},
+    {"id":9,"name":"Object Oriented Principles","level":"Good"},
+    {"id":10,"name":"C#, Dotnet Framework","level":"Good"},
+    {"id":11,"name":"Entity Framework Core","level":"Good"}
+
+]

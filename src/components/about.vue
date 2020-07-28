@@ -7,6 +7,8 @@
             </div>
             <div class="col-sm-4"></div>
         </div>
+        <hr class="dashed">
+
         <div id="myDescription">
               <h2> Hi, I'm Fatemeh Shahidani.</h2>
               <h3>I'm a programmer :)</h3>
@@ -46,51 +48,9 @@
                     <h5 class="card-title card-header">Professional Skill</h5>
                     <p class="card-text">
                         <ul class="list-group">
-                           
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                C#, Dotnet Framework
-                                <span class="badge badge-primary badge-pill">50%</span>
-                            </li>
-                             <li class="list-group-item d-flex justify-content-between align-items-center">
-                               Object Oriented Principles
-                                <span class="badge badge-primary badge-pill">50%</span>
-                            </li>
-                             <li class="list-group-item d-flex justify-content-between align-items-center">
-                               Domain Driven Design
-                                <span class="badge badge-primary badge-pill">30%</span>
-                            </li>   
-                              <li class="list-group-item d-flex justify-content-between align-items-center">
-                               CQRS
-                                <span class="badge badge-primary badge-pill">10%</span>
-                            </li> 
-                             <li class="list-group-item d-flex justify-content-between align-items-center">
-                               Entity Framework Core
-                                <span class="badge badge-primary badge-pill">20%</span>
-                            </li>
-                             <li class="list-group-item d-flex justify-content-between align-items-center">
-                               Microsoft SQL Server
-                                <span class="badge badge-primary badge-pill">10%</span>
-                            </li>
-                              <li class="list-group-item d-flex justify-content-between align-items-center">
-                               Angular, TypeScript
-                                <span class="badge badge-primary badge-pill">10%</span>
-                            </li>
-                              <li class="list-group-item d-flex justify-content-between align-items-center">
-                               HTML, CSS, Bootstrap
-                                <span class="badge badge-primary badge-pill">10%</span>
-                            </li>
-                            
-                             <li class="list-group-item d-flex justify-content-between align-items-center">
-                               Vue Js
-                                <span class="badge badge-primary badge-pill">10%</span>
-                            </li>
-                             <li class="list-group-item d-flex justify-content-between align-items-center">
-                              JavaScript, JQuery
-                                <span class="badge badge-primary badge-pill">30%</span>
-                            </li>
-                             <li class="list-group-item d-flex justify-content-between align-items-center">
-                              Git
-                                <span class="badge badge-primary badge-pill">50%</span>
+                            <li v-for="work in $options.works" :key="work" class="list-group-item d-flex justify-content-between align-items-center">
+                                {{work.name}}
+                                <span class="badge badge-primary badge-pill">{{work.level}}</span>
                             </li>
                         </ul>
                     </p>
@@ -109,27 +69,34 @@
                     </p>
                 </div>
             </div>
-       </div>   
+       </div>  
+       <hr class="dashed"> 
+       <Contact />
     </div>
   
 </template>
 
 <script>
 import Picture from './picture.vue'
-
+import Contact from './contact.vue'
+import workJson from '../data/work.json'
     export default {
         name:'About',
+        works:workJson,
+        date(){
+            return{
+                
+            }
+        },
         components:{
-            Picture
+            Picture,
+            Contact
         }
     }
 </script>
 
 <style scoped>
 
-ul{
-    list-style-type: square;
-}
 .inline{
     display: inline;
 }

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header />
-    <About />
+    <router-view />
     <Footer />
     
   </div>
@@ -9,7 +9,7 @@
 
 <script>
 import Header from './components/header.vue'
-import About from './components/about.vue'
+
 import Footer from './components/footer.vue'
 
 
@@ -18,7 +18,7 @@ export default {
   name: 'App',
   components: {
     Header,
-    About,
+
     Footer
   
   }
