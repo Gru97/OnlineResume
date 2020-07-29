@@ -1,11 +1,10 @@
 <template>
     <header>
-        <h1>Fatemeh Shanidani</h1>
-        <ul>
-            <li ><router-link to="/about">About Me</router-link></li>
+        <li><h1>Fatemeh Shanidani</h1></li>
+        <ul class="list-group-horizontal">
+            <li><router-link to="/about">About Me</router-link></li>
             <li><router-link to="/contact">Contact Me</router-link></li>
             <li><router-link to="/blog">Blog</router-link></li>
-
         </ul>
     </header>
 </template>
@@ -20,7 +19,7 @@
 <style  scoped>
 header {
     color:white;
-    padding: 20px;
+    padding: 10px;
     background-color: black;
 }
 ul {
@@ -34,5 +33,15 @@ li {
   cursor: pointer;
   color: white;
 }
+h1{
+    display: inline;
 
+}
+a{
+    color: white;
+}
+a:hover{
+    text-decoration:none;
+    color:crimson;
+}
 </style>

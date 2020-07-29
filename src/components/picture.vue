@@ -16,6 +16,7 @@ img {
     width:80%;
     height: 90%;
     border:darkblue 80px;
+    margin-top: 20px;
 }
 
 </style>

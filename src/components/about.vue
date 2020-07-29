@@ -1,11 +1,11 @@
 <template>
     <div class="container">
         <div class="row">
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
                 <Picture />
             </div>
-            <div class="col-sm-4"></div>
+            <div class="col-sm-3"></div>
         </div>
         <hr class="dashed">
 
@@ -21,9 +21,9 @@
                     <h5 class="card-title card-header">Education</h5>
                     <p class="card-text">
                         <ul class="list-group">
-                            <li class="list-group-item d-flex justify-content-between align-items-center">Diploma, Physics and Mathematics </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center">B.S. Computer Software, Shariaty Technical And Vocational University (2016-2020)</li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center">B.S. French, Tehran University (2020- 2022)</li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">Diploma, Physics and Mathematics <small>(2011-2015)</small> </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">B.S. Computer Software, Shariaty Technical And Vocational University <small>(2016-2020)</small></li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">B.S. French, Tehran University <small>(2020- 2022)</small></li>
                         </ul>
                     </p>
                 </div>
@@ -56,7 +56,7 @@
                     </p>
                 </div>
             </div>
-            <div class="card border-info" style="width: 32rem;">
+            <div class="card" style="width: 32rem;">
                 <div class="card-body">
                     <i class=" far fa-lightbulb	card-img-top" ></i>
                     <h5 class="card-title card-header">Interests</h5>
@@ -102,7 +102,6 @@ import workJson from '../data/work.json'
 }
 #myDescription{
     padding: 10px;
-    margin: 20px;
 }
 h5{
     color:black;
